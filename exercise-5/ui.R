@@ -1,4 +1,5 @@
 # ui.R
+# install.packages("plotly")
 library(shiny)
 library(plotly)
 shinyUI(navbarPage(
@@ -30,7 +31,26 @@ shinyUI(navbarPage(
         plotlyOutput("map")
       )
     )
-  )
+  ),
 
   # Create a tabPanel to show your scatter plot
+  tabPanel(
+    "Scatter",
+    titlePanel("Population v.s. Vote Power"),
+    # Create sidebar layout
+    sidebarLayout(
+      
+      # Side panel for controls
+      sidebarPanel(
+        
+        # Input to select variable to map
+        textInput("search", label = "Find a State", value = "")
+      ),
+      
+      # Main panel: display plotly map
+      mainPanel(
+        plotlyOutput("scatter")
+      )
+    )
+  )
 ))

@@ -1,0 +1,13 @@
+name: exercise-5
+title: exercise-5
+username:
+account: jessieyjx
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 340309
+bundleId: 1365767
+url: https://jessieyjx.shinyapps.io/exercise-5/
+when: 1525911185.0177
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: imgs/scatter.png
